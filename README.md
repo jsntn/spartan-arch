@@ -33,6 +33,15 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 (via [Grub not installed on reboot?](https://github.com/abrochard/spartan-arch/issues/1))
 
+You would probably like to continue to solve the internet connection from virtual machine with NAT, install `dhcpcd` first, then enable the service,
+
+```shell
+pacman -Sy dhcpcd
+systemctl enable dhcpcd.service
+```
+
+Eject the cd and reboot the virtual machine.
+
 Login as your user then run the command
 ```shell
 bash post-install.sh
