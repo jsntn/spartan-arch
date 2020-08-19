@@ -20,8 +20,8 @@ fi
 # setup timezone
 echo 'Setting up timezone'
 timedatectl set-ntp true
-ln -s /usr/share/zoneinfo/America/New_York /etc/localtime
-timedatectl set-timezone America/New_York
+ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+timedatectl set-timezone Asia/Shanghai
 hwclock --systohc
 
 # setup locale
