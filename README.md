@@ -59,4 +59,5 @@ Once the VM is booted, log in as your user and call `startx` to start Xorg.
 
 ## Thanks
 
+- [Virtualized Emacs as an IDE](https://www.youtube.com/watch?v=RDrG-_kapaQ)
 - [Install Arch Linux on VirtualBox](https://web.archive.org/web/20200819055606/https://kuroigengetsu.gitbooks.io/installarchlinuxonvirtualbox/content/)
