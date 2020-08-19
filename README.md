@@ -11,7 +11,7 @@ This is a set of scripts designed to automate the creation of a minimal VM runni
 ## Installation
 Boot the VM on archlinux iso and then run the command
 ```shell
-wget https://goo.gl/ZPAMtT -O install.sh
+wget https://raw.githubusercontent.com/jsntn/spartan-arch/my-version/install.sh -O install.sh
 bash install.sh [user] [password] [fast]
 ```
 All arguments are optional and will be prompted for if not passed on invocation:
@@ -22,6 +22,16 @@ All arguments are optional and will be prompted for if not passed on invocation:
 The install.sh script will run and then reboot the computer once done.
 
 You want to boot on disk this time and eject the cd from the VM.
+
+If the virtual machine doesn't boot successfully, but appears `grub>` prompt, boot it from cd, then try to fix it as the following way,
+
+```shell
+mount /dev/sda1
+arch-chroot /mnt
+grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+(via [Grub not installed on reboot?](https://github.com/abrochard/spartan-arch/issues/1))
 
 Login as your user then run the command
 ```shell
