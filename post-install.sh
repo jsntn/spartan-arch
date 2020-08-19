@@ -95,7 +95,7 @@ fi
 cd
 mkdir Pictures
 cd Pictures
-wget https://github.com/abrochard/spartan-arch/blob/master/wallpaper.jpg?raw=true -O wallpaper.jpg
+wget https://github.com/jsntn/spartan-arch/blob/my-version/wallpaper.jpg?raw=true -O wallpaper.jpg
 cd ~/.config/
 mkdir nitrogen
 cd nitrogen
@@ -117,7 +117,7 @@ go get -u github.com/jstemmer/gotags
 
 # temporary workaround
 cd
-wget https://raw.githubusercontent.com/abrochard/spartan-arch/master/startx.sh -O startx.sh
+wget https://raw.githubusercontent.com/jsntn/spartan-arch/my-version/startx.sh -O startx.sh
 chmod +x startx.sh
 echo 'alias startx=~/startx.sh' >> ~/.zshrc
 
