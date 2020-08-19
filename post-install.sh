@@ -18,9 +18,9 @@ echo 'exec nitrogen --restore &' >> ~/.xinitrc
 echo 'exec emacs' >> ~/.xinitrc
 
 # emacs config
-git clone https://github.com/abrochard/emacs-config.git
-echo '(load-file "~/emacs-config/bootstrap.el")' > ~/.emacs
-echo '(server-start)' >> ~/.emacs
+# git clone https://github.com/abrochard/emacs-config.git
+# echo '(load-file "~/emacs-config/bootstrap.el")' > ~/.emacs
+# echo '(server-start)' >> ~/.emacs
 
 # cower & pacaur
 mkdir Downloads
@@ -78,10 +78,10 @@ sed -i 's/^order += "wireless _first_"/#order += "wireless _first_"/' ~/.config/
 sed -i 's/^order += "battery 0"/#order += "battery 0"/' ~/.config/i3status/config
 
 # git first time setup
-git config --global user.name $(whoami)
-git config --global user.email $(whoami)@$(hostname)
-git config --global code.editor emacsclient
-echo '    AddKeysToAgent yes' >> ~/.ssh/config
+# git config --global user.name $(whoami)
+# git config --global user.email $(whoami)@$(hostname)
+# git config --global code.editor emacsclient
+# echo '    AddKeysToAgent yes' >> ~/.ssh/config
 
 # if there are ssh key
 if [ -d ~/workspace/ssh ]; then
