@@ -40,6 +40,8 @@ pacman -Sy dhcpcd
 systemctl enable dhcpcd.service
 ```
 
+(via [Install Arch Linux on Oracle VM VirtualBox](https://web.archive.org/web/20200819055253/https://kuroigengetsu.gitbooks.io/installarchlinuxonvirtualbox/content/chapter1.html))
+
 Eject the cd and reboot the virtual machine.
 
 Login as your user then run the command
@@ -54,3 +56,7 @@ Once the VM is booted, log in as your user and call `startx` to start Xorg.
 ## TODO
 - dhcpcd on boot
 - ssh-keys generation
+
+Thanks:
+
+- [Install Arch Linux on VirtualBox](https://web.archive.org/web/20200819055606/https://kuroigengetsu.gitbooks.io/installarchlinuxonvirtualbox/content/)
